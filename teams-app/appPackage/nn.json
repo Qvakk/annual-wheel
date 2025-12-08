@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.19/MicrosoftTeams.localization.schema.json",
+  "name.short": "Årshjul",
+  "name.full": "Årshjul - Visuell planlegging",
+  "description.short": "Visuell årsplanlegging og hendingsstyring",
+  "description.full": "Ein visuell årshjul-applikasjon for planlegging av gjentakande hendingar, fristar og aktivitetar gjennom året. Organiser laget sin tidsplan med ei intuitiv sirkulær kalendervisning.",
+  "staticTabs[0].name": "Hjul",
+  "staticTabs[1].name": "Hendingar"
+}

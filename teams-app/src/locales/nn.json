@@ -1,0 +1,237 @@
+{
+  "app": {
+    "title": "Årshjul",
+    "loading": "Lastar...",
+    "retry": "Prøv på nytt"
+  },
+  "header": {
+    "title": "Årshjul",
+    "admin": "Admin",
+    "share": "Del",
+    "settings": "Innstillingar",
+    "signOut": "Logg ut"
+  },
+  "wheel": {
+    "today": "I dag",
+    "week": "Veke",
+    "year": "År"
+  },
+  "months": {
+    "january": "Januar",
+    "february": "Februar",
+    "march": "Mars",
+    "april": "April",
+    "may": "Mai",
+    "june": "Juni",
+    "july": "Juli",
+    "august": "August",
+    "september": "September",
+    "october": "Oktober",
+    "november": "November",
+    "december": "Desember",
+    "short": ["Jan", "Feb", "Mar", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Des"]
+  },
+  "weekdays": {
+    "monday": "Måndag",
+    "tuesday": "Tysdag",
+    "wednesday": "Onsdag",
+    "thursday": "Torsdag",
+    "friday": "Fredag",
+    "saturday": "Laurdag",
+    "sunday": "Sundag",
+    "short": ["Mån", "Tys", "Ons", "Tor", "Fre", "Lau", "Sun"]
+  },
+  "activities": {
+    "title": "Aktivitetar",
+    "add": "Legg til aktivitet",
+    "newActivity": "Ny aktivitet",
+    "search": "Søk i aktivitetar...",
+    "edit": "Rediger aktivitet",
+    "delete": "Slett aktivitet",
+    "deleteConfirm": "Er du sikker på at du vil slette denne aktiviteten?",
+    "noActivities": "Ingen aktivitetar planlagde enno.",
+    "noSearchResults": "Ingen aktivitetar samsvarar med søket ditt.",
+    "upcoming": "Komande",
+    "past": "Tidlegare",
+    "all": "Alle",
+    "done": "Fullført",
+    "showDone": "Vis fullførte",
+    "day": "dag",
+    "days": "dagar",
+    "form": {
+      "title": "Tittel",
+      "titlePlaceholder": "Aktivitetsnamn",
+      "description": "Skildring",
+      "descriptionPlaceholder": "Legg til skildring...",
+      "startDate": "Startdato",
+      "endDate": "Sluttdato",
+      "type": "Type",
+      "layer": "Lag",
+      "save": "Lagre",
+      "cancel": "Avbryt",
+      "update": "Oppdater",
+      "addActivity": "Legg til aktivitet",
+      "repeatActivity": "Gjenta aktivitet",
+      "frequency": "Frekvens",
+      "weekly": "Kvar veke",
+      "every2Weeks": "Kvar 2. veke",
+      "every3Weeks": "Kvar 3. veke",
+      "monthly": "Kvar månad",
+      "repeatOn": "Gjenta på",
+      "repeatNote": "Aktivitetar blir oppretta for 1 år frå startdato",
+      "repetition": "Repetisjon",
+      "noRepetition": "Ingen repetisjon",
+      "biweekly": "Annakvar veke",
+      "repeatUntil": "Gjenta til"
+    },
+    "deleteDialog": {
+      "title": "Slett gjentakande aktivitet",
+      "seriesMessage": "Denne aktiviteten er del av ein serie med {count} førekomstar.",
+      "whatToDelete": "Kva vil du slette?",
+      "thisOccurrence": "Berre denne førekomsten",
+      "thisOccurrenceDesc": "Slett berre denne eine aktiviteten",
+      "allOccurrences": "Alle {count} førekomstar",
+      "allOccurrencesDesc": "Slett heile serien",
+      "single": "Slett berre denne",
+      "all": "Slett alle i serien",
+      "message": "Denne aktiviteten er del av ein serie. Vil du slette berre denne eller alle?"
+    }
+  },
+  "activityTypes": {
+    "meeting": "Møte",
+    "deadline": "Frist",
+    "event": "Hending",
+    "holiday": "Heilagdag",
+    "milestone": "Milepæl",
+    "training": "Opplæring",
+    "review": "Gjennomgang",
+    "planning": "Planlegging",
+    "conference": "Konferanse",
+    "workshop": "Workshop",
+    "vacation": "Ferie",
+    "other": "Anna"
+  },
+  "layers": {
+    "title": "Lag",
+    "holidays": "Heilagdagar",
+    "organization": "Organisasjon",
+    "groups": "Grupper",
+    "custom": "Eigendefinert",
+    "add": "Legg til lag",
+    "edit": "Rediger lag",
+    "delete": "Slett lag",
+    "visibility": "Synlegheit",
+    "visible": "Synleg",
+    "hidden": "Gøymd",
+    "ring": "Ring",
+    "moveUp": "Flytt opp (innover)",
+    "moveDown": "Flytt ned (utover)",
+    "cannotDeleteSystem": "Kan ikkje slette systemlag. Du kan gøyme dei i staden.",
+    "deleteDialog": {
+      "title": "Slett lag",
+      "message": "Du er i ferd med å slette «{name}». Kva vil du gjere med aktivitetane i dette laget?",
+      "deleteAll": "Slett alle aktivitetar",
+      "deleteAllDesc": "Slett alle aktivitetar i dette laget permanent",
+      "moveActivities": "Flytt aktivitetar til eit anna lag",
+      "moveActivitiesDesc": "Overfør alle aktivitetar til eit anna lag",
+      "moveTo": "Flytt til:",
+      "noTargets": "Ingen andre lag tilgjengelege å flytte til.",
+      "confirmDelete": "Slett lag",
+      "confirmMove": "Flytt og slett lag"
+    }
+  },
+  "admin": {
+    "title": "Admin-innstillingar",
+    "tabs": {
+      "layers": "Lag",
+      "activityTypes": "Aktivitetstypar"
+    },
+    "activityTypes": {
+      "title": "Aktivitetstypar",
+      "add": "Legg til type",
+      "description": "Konfigurer aktivitetstypane som er tilgjengelege i årshjulet. Kvar type har ein unik farge for enkel identifisering.",
+      "form": {
+        "label": "Etikett",
+        "labelPlaceholder": "t.d. Workshop",
+        "key": "Nøkkel",
+        "keyPlaceholder": "t.d. workshop",
+        "keyHint": "Små bokstavar, ingen mellomrom. Brukast internt.",
+        "color": "Farge",
+        "icon": "Ikon",
+        "description": "Skildring",
+        "descriptionPlaceholder": "Valfri skildring..."
+      },
+      "default": "Standard",
+      "cannotDelete": "Kan ikkje slette standard aktivitetstypar"
+    },
+    "layers": {
+      "title": "Hjul-lag",
+      "description": "Administrer laga (ringane) som visast på årshjulet. Kvart lag representerer ein kategori av aktivitetar. Dra for å omorganisere, eller bruk piler for å endre ringposisjon (innover til utover).",
+      "form": {
+        "name": "Namn",
+        "namePlaceholder": "t.d. Offentlege arrangement",
+        "type": "Type",
+        "typeHint": "Type avgjer spesiell oppførsel (t.d. heilagdagslag hentar heilagdagar frå valt land).",
+        "country": "Land",
+        "countryHint": "Heilagdagar vil bli henta frå Nager.Date API for dette landet.",
+        "color": "Farge",
+        "description": "Skildring",
+        "descriptionPlaceholder": "Valfri skildring..."
+      }
+    },
+    "accessDenied": {
+      "title": "Ingen tilgang",
+      "message": "Du treng rolla admin.write for å få tilgang til denne sida.",
+      "help": "Kontakt administratoren din for å be om tilgang."
+    },
+    "saved": "Lagra",
+    "updated": "Oppdatert",
+    "deleted": "Sletta"
+  },
+  "share": {
+    "title": "Del årshjul",
+    "createLink": "Opprett delingslenkje",
+    "description": "Del årshjulet med andre",
+    "embedCode": "Innbyggingskode",
+    "copyLink": "Kopier lenkje",
+    "copied": "Kopiert!",
+    "permissions": "Løyve",
+    "publicAccess": "Offentleg tilgang",
+    "restrictedAccess": "Avgrensa tilgang"
+  },
+  "filters": {
+    "title": "Filter",
+    "showAll": "Vis alle",
+    "hideAll": "Gøym alle",
+    "layers": "Lag",
+    "all": "Alle",
+    "none": "Ingen"
+  },
+  "common": {
+    "save": "Lagre",
+    "cancel": "Avbryt",
+    "delete": "Slett",
+    "edit": "Rediger",
+    "add": "Legg til",
+    "close": "Lukk",
+    "confirm": "Stadfest",
+    "yes": "Ja",
+    "no": "Nei",
+    "ok": "OK",
+    "error": "Feil",
+    "success": "Suksess",
+    "warning": "Åtvaring",
+    "info": "Info",
+    "loading": "Lastar...",
+    "required": "Påkravd",
+    "optional": "Valfritt",
+    "retry": "Prøv igjen",
+    "documentation": "Dokumentasjon",
+    "licenseVersion": "Lisens og versjon"
+  },
+  "language": {
+    "title": "Språk",
+    "select": "Vel språk",
+    "change": "Språk"
+  }
+}

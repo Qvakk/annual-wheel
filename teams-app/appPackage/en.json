@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.19/MicrosoftTeams.localization.schema.json",
+  "name.short": "Annual Wheel",
+  "name.full": "Annual Wheel - Visual Planning",
+  "description.short": "Visual annual planning and event management",
+  "description.full": "A visual annual wheel application for planning recurring events, deadlines, and activities throughout the year. Organize your team's schedule with an intuitive circular calendar view.",
+  "staticTabs[0].name": "Wheel",
+  "staticTabs[1].name": "Events"
+}

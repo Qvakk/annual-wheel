@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Authentication Complete</title>
+  </head>
+  <body>
+    <script src="https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js"></script>
+    <script>
+      (function () {
+        microsoftTeams.app.initialize().then(function () {
+          const hashParams = new URLSearchParams(window.location.hash.substring(1));
+          const searchParams = new URLSearchParams(window.location.search);
+          
+          if (hashParams.get("error") || searchParams.get("error")) {
+            microsoftTeams.authentication.notifyFailure(
+              hashParams.get("error_description") || searchParams.get("error_description") || "Authentication failed"
+            );
+          } else if (hashParams.get("access_token") || hashParams.get("id_token")) {
+            microsoftTeams.authentication.notifySuccess(
+              hashParams.get("access_token") || hashParams.get("id_token")
+            );
+          } else if (searchParams.get("code")) {
+            microsoftTeams.authentication.notifySuccess(searchParams.get("code"));
+          } else {
+            microsoftTeams.authentication.notifyFailure("No authentication response");
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

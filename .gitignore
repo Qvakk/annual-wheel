@@ -1,0 +1,89 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+out/
+*.js.map
+
+# Rust
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Teams Toolkit
+.fx/
+.localSettings
+devTools/
+appPackage/build/
+env/.env.*.user
+env/.env.local
+
+# Azure
+.azure/
+local.settings.json
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+
+# Package manager locks (keep one, ignore others if switching)
+# Uncomment if you want to ignore lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Svelte
+.svelte-kit/
+
+# TypeScript
+*.tsbuildinfo
+
+# Secrets and keys - NEVER commit these
+*.pem
+*.key
+*.cert
+*.p12
+secrets/
+credentials/

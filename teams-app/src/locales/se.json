@@ -1,0 +1,237 @@
+{
+  "app": {
+    "title": "Jahkejorba",
+    "loading": "Viežžamin...",
+    "retry": "Geahččal ođđasit"
+  },
+  "header": {
+    "title": "Jahkejorba",
+    "admin": "Hálddahus",
+    "share": "Juhke",
+    "settings": "Heivehusat",
+    "signOut": "Olggos čállit"
+  },
+  "wheel": {
+    "today": "Odne",
+    "week": "Vahkku",
+    "year": "Jahki"
+  },
+  "months": {
+    "january": "Ođđajagimánnu",
+    "february": "Guovvamánnu",
+    "march": "Njukčamánnu",
+    "april": "Cuoŋománnu",
+    "may": "Miessemánnu",
+    "june": "Geassemánnu",
+    "july": "Suoidnemánnu",
+    "august": "Borgemánnu",
+    "september": "Čakčamánnu",
+    "october": "Golggotmánnu",
+    "november": "Skábmamánnu",
+    "december": "Juovlamánnu",
+    "short": ["Ođđ", "Guo", "Nju", "Cuo", "Mie", "Gea", "Suo", "Bor", "Čak", "Gol", "Ská", "Juo"]
+  },
+  "weekdays": {
+    "monday": "Mánnodat",
+    "tuesday": "Disdat",
+    "wednesday": "Gaskavahkku",
+    "thursday": "Duorastat",
+    "friday": "Bearjadat",
+    "saturday": "Lávvordat",
+    "sunday": "Sotnabeaivi",
+    "short": ["Mán", "Dis", "Gas", "Duo", "Bea", "Láv", "Sot"]
+  },
+  "activities": {
+    "title": "Doaimmat",
+    "add": "Lasit doaimma",
+    "newActivity": "Ođđa doaibma",
+    "search": "Oza doaimmain...",
+    "edit": "Rievdat doaimma",
+    "delete": "Sihko doaimma",
+    "deleteConfirm": "Leatgo sihkar ahte háliidat sihkkut dán doaimma?",
+    "noActivities": "Eai leat plánejuvvon doaimmat vel.",
+    "noSearchResults": "Eai leat doaimmat mat heivejit du ohcamii.",
+    "upcoming": "Boahttevaš",
+    "past": "Vássán",
+    "all": "Buot",
+    "done": "Čađahuvvon",
+    "showDone": "Čájet čađahuvvon",
+    "day": "beaivi",
+    "days": "beaivvit",
+    "form": {
+      "title": "Namahus",
+      "titlePlaceholder": "Doaibmanamma",
+      "description": "Čilgehus",
+      "descriptionPlaceholder": "Lasit čilgehusa...",
+      "startDate": "Álgodáhton",
+      "endDate": "Loahpadáhton",
+      "type": "Šládja",
+      "layer": "Láhka",
+      "save": "Vurke",
+      "cancel": "Heaitte",
+      "update": "Ođasmahte",
+      "addActivity": "Lasit doaimma",
+      "repeatActivity": "Geardut doaimma",
+      "frequency": "Dávjodas",
+      "weekly": "Vahkosaččat",
+      "every2Weeks": "Juohke 2. vahkku",
+      "every3Weeks": "Juohke 3. vahkku",
+      "monthly": "Mánnosaččat",
+      "repeatOn": "Geardut",
+      "repeatNote": "Doaimmat ráhkaduvvojit 1 jahkái álgodáhtonis",
+      "repetition": "Geardduheapmi",
+      "noRepetition": "Ii geardduheapmi",
+      "biweekly": "Juohke nubbi vahkku",
+      "repeatUntil": "Geardut dassážii go"
+    },
+    "deleteDialog": {
+      "title": "Sihko geardduheaddji doaimma",
+      "seriesMessage": "Dát doaibma lea oassi ráiddus mas leat {count} háve.",
+      "whatToDelete": "Maid háliidat sihkkut?",
+      "thisOccurrence": "Dušše dán háve",
+      "thisOccurrenceDesc": "Sihko dušše dán okta doaimma",
+      "allOccurrences": "Buot {count} háve",
+      "allOccurrencesDesc": "Sihko olles ráiddu",
+      "single": "Sihko dušše dán",
+      "all": "Sihko buot ráiddus",
+      "message": "Dát doaibma lea oassi ráiddus. Háliidat go sihkkut dušše dán dahje buot?"
+    }
+  },
+  "activityTypes": {
+    "meeting": "Čoahkkin",
+    "deadline": "Áigemearri",
+    "event": "Dáhpáhus",
+    "holiday": "Bassibeaivi",
+    "milestone": "Mearkkašahtti",
+    "training": "Oahpahus",
+    "review": "Guorahallat",
+    "planning": "Plánen",
+    "conference": "Konferánsa",
+    "workshop": "Bargobádji",
+    "vacation": "Luopmu",
+    "other": "Eará"
+  },
+  "layers": {
+    "title": "Láhkat",
+    "holidays": "Bassibeaivvit",
+    "organization": "Organisašuvdna",
+    "groups": "Joavkkut",
+    "custom": "Iešmearridan",
+    "add": "Lasit láhka",
+    "edit": "Rievdat láhka",
+    "delete": "Sihko láhka",
+    "visibility": "Oidnosvuohta",
+    "visible": "Oinnolat",
+    "hidden": "Čihkkojuvvon",
+    "ring": "Riŋŋá",
+    "moveUp": "Sirdde bajás (siskkil)",
+    "moveDown": "Sirdde vulos (olggobeallái)",
+    "cannotDeleteSystem": "Ii sáhte sihkkut vuogádatláhkaid. Sáhtát čihkkot daid dan sadjái.",
+    "deleteDialog": {
+      "title": "Sihko láhka",
+      "message": "Don leat sihkkomin \"{name}\". Maid háliidat dahkat doaimmaiguin dán láhkas?",
+      "deleteAll": "Sihko buot doaimmaid",
+      "deleteAllDesc": "Sihko buot doaimmaid dán láhkas bissovaččat",
+      "moveActivities": "Sirde doaimmaid eará láhkii",
+      "moveActivitiesDesc": "Sirde buot doaimmaid eará láhkii",
+      "moveTo": "Sirde:",
+      "noTargets": "Eai leat eará láhkat gosa sáhttá sirdit.",
+      "confirmDelete": "Sihko láhka",
+      "confirmMove": "Sirde ja sihko láhka"
+    }
+  },
+  "admin": {
+    "title": "Hálddahusheivehusat",
+    "tabs": {
+      "layers": "Láhkat",
+      "activityTypes": "Doaibmašlájat"
+    },
+    "activityTypes": {
+      "title": "Doaibmašlájat",
+      "add": "Lasit šlája",
+      "description": "Heive doaibmašlájaid mat leat olahanláhkái jahkejorbas. Juohke šládjas lea sierra ivdni álki dovddaheami várás.",
+      "form": {
+        "label": "Namahus",
+        "labelPlaceholder": "ovd. Bargobádji",
+        "key": "Čoavdda",
+        "keyPlaceholder": "ovd. bargobadji",
+        "keyHint": "Unna bustávat, eai gaskkat. Geavahuvvo siskkáldasat.",
+        "color": "Ivdni",
+        "icon": "Govva",
+        "description": "Čilgehus",
+        "descriptionPlaceholder": "Válljemušlaš čilgehus..."
+      },
+      "default": "Standárda",
+      "cannotDelete": "Ii sáhte sihkkut standárda doaibmašlájaid"
+    },
+    "layers": {
+      "title": "Jorba-láhkat",
+      "description": "Hálddaš láhkaid (riŋggáid) mat čájehuvvojit jahkejorbas. Juohke láhka ovddasta kategorija doaimmain. Gease láhkaid maŋŋálaga rievdadit, dahje geavat njuolaid rievdadit riŋggásaji.",
+      "form": {
+        "name": "Namma",
+        "namePlaceholder": "ovd. Almmolaš dáhpáhusat",
+        "type": "Šládja",
+        "typeHint": "Šládja mearrida sierra doaimma (ovd. bassibeaiviláhkat viežžet bassibeivviid válljejuvvon riikkas).",
+        "country": "Riika",
+        "countryHint": "Bassibeaivvit viežžojuvvojit Nager.Date API:as dán riikii.",
+        "color": "Ivdni",
+        "description": "Čilgehus",
+        "descriptionPlaceholder": "Válljemušlaš čilgehus..."
+      }
+    },
+    "accessDenied": {
+      "title": "Ii beassan",
+      "message": "Don dárbbašat admin.write-rolla beassat dán siidui.",
+      "help": "Váldde oktavuođa hálddaheddjiiguin jearrat beassama."
+    },
+    "saved": "Vurkkejuvvon",
+    "updated": "Ođasmahttojuvvon",
+    "deleted": "Sihkkojuvvon"
+  },
+  "share": {
+    "title": "Juhke jahkejorba",
+    "createLink": "Ráhkat juohkinliŋkka",
+    "description": "Juhke jahkejorba earáiguin",
+    "embedCode": "Čuohppankoda",
+    "copyLink": "Kopiiere liŋkka",
+    "copied": "Kopierejuvvon!",
+    "permissions": "Lohpit",
+    "publicAccess": "Almmolaš beassan",
+    "restrictedAccess": "Gáržžiduvvon beassan"
+  },
+  "filters": {
+    "title": "Sillat",
+    "showAll": "Čájet buot",
+    "hideAll": "Čihko buot",
+    "layers": "Láhkat",
+    "all": "Buot",
+    "none": "Ii mikáge"
+  },
+  "common": {
+    "save": "Vurke",
+    "cancel": "Heaitte",
+    "delete": "Sihko",
+    "edit": "Rievdat",
+    "add": "Lasit",
+    "close": "Gidde",
+    "confirm": "Duođaš",
+    "yes": "Jo",
+    "no": "Ii",
+    "ok": "OK",
+    "error": "Feaila",
+    "success": "Lihkostuvai",
+    "warning": "Váruhus",
+    "info": "Dieđut",
+    "loading": "Viežžamin...",
+    "required": "Gáibiduvvon",
+    "optional": "Válljemušlaš",
+    "retry": "Geahččal ođđasit",
+    "documentation": "Dokumentašuvdna",
+    "licenseVersion": "Liseavdna ja veršuvdna"
+  },
+  "language": {
+    "title": "Giella",
+    "select": "Vállje giela",
+    "change": "Giella"
+  }
+}

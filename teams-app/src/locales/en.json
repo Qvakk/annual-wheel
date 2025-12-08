@@ -1,0 +1,237 @@
+{
+  "app": {
+    "title": "Annual Wheel",
+    "loading": "Loading...",
+    "retry": "Retry"
+  },
+  "header": {
+    "title": "Annual Wheel",
+    "admin": "Admin",
+    "share": "Share",
+    "settings": "Settings",
+    "signOut": "Sign out"
+  },
+  "wheel": {
+    "today": "Today",
+    "week": "Week",
+    "year": "Year"
+  },
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December",
+    "short": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+  },
+  "weekdays": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "short": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  },
+  "activities": {
+    "title": "Activities",
+    "add": "Add activity",
+    "newActivity": "New Activity",
+    "search": "Search activities...",
+    "edit": "Edit activity",
+    "delete": "Delete activity",
+    "deleteConfirm": "Are you sure you want to delete this activity?",
+    "noActivities": "No activities planned yet.",
+    "noSearchResults": "No activities match your search.",
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "all": "All",
+    "done": "Done",
+    "showDone": "Show done",
+    "day": "day",
+    "days": "days",
+    "form": {
+      "title": "Title",
+      "titlePlaceholder": "Activity name",
+      "description": "Description",
+      "descriptionPlaceholder": "Add description...",
+      "startDate": "Start date",
+      "endDate": "End date",
+      "type": "Type",
+      "layer": "Layer",
+      "save": "Save",
+      "cancel": "Cancel",
+      "update": "Update",
+      "addActivity": "Add Activity",
+      "repeatActivity": "Repeat activity",
+      "frequency": "Frequency",
+      "weekly": "Weekly",
+      "every2Weeks": "Every 2 weeks",
+      "every3Weeks": "Every 3 weeks",
+      "monthly": "Monthly",
+      "repeatOn": "Repeat on",
+      "repeatNote": "Activities will be created for 1 year from start date",
+      "repetition": "Repetition",
+      "noRepetition": "No repetition",
+      "biweekly": "Bi-weekly",
+      "repeatUntil": "Repeat until"
+    },
+    "deleteDialog": {
+      "title": "Delete Repeated Activity",
+      "seriesMessage": "This activity is part of a series with {count} occurrences.",
+      "whatToDelete": "What would you like to delete?",
+      "thisOccurrence": "This occurrence only",
+      "thisOccurrenceDesc": "Delete just this one activity",
+      "allOccurrences": "All {count} occurrences",
+      "allOccurrencesDesc": "Delete the entire series",
+      "single": "Delete only this one",
+      "all": "Delete all in series",
+      "message": "This activity is part of a series. Do you want to delete only this one or all of them?"
+    }
+  },
+  "activityTypes": {
+    "meeting": "Meeting",
+    "deadline": "Deadline",
+    "event": "Event",
+    "holiday": "Holiday",
+    "milestone": "Milestone",
+    "training": "Training",
+    "review": "Review",
+    "planning": "Planning",
+    "conference": "Conference",
+    "workshop": "Workshop",
+    "vacation": "Vacation",
+    "other": "Other"
+  },
+  "layers": {
+    "title": "Layers",
+    "holidays": "Holidays",
+    "organization": "Organization",
+    "groups": "Groups",
+    "custom": "Custom",
+    "add": "Add layer",
+    "edit": "Edit layer",
+    "delete": "Delete layer",
+    "visibility": "Visibility",
+    "visible": "Visible",
+    "hidden": "Hidden",
+    "ring": "Ring",
+    "moveUp": "Move up (inward)",
+    "moveDown": "Move down (outward)",
+    "cannotDeleteSystem": "Cannot delete system layers. You can hide them instead.",
+    "deleteDialog": {
+      "title": "Delete layer",
+      "message": "You are about to delete \"{name}\". What would you like to do with the activities in this layer?",
+      "deleteAll": "Delete all activities",
+      "deleteAllDesc": "Permanently delete all activities in this layer",
+      "moveActivities": "Move activities to another layer",
+      "moveActivitiesDesc": "Transfer all activities to a different layer",
+      "moveTo": "Move to:",
+      "noTargets": "No other layers available to move to.",
+      "confirmDelete": "Delete layer",
+      "confirmMove": "Move & delete layer"
+    }
+  },
+  "admin": {
+    "title": "Admin Settings",
+    "tabs": {
+      "layers": "Layers",
+      "activityTypes": "Activity Types"
+    },
+    "activityTypes": {
+      "title": "Activity Types",
+      "add": "Add type",
+      "description": "Configure the activity types available in the annual wheel. Each type has a unique color for easy identification.",
+      "form": {
+        "label": "Label",
+        "labelPlaceholder": "e.g., Workshop",
+        "key": "Key",
+        "keyPlaceholder": "e.g., workshop",
+        "keyHint": "Lowercase letters, no spaces. Used internally.",
+        "color": "Color",
+        "icon": "Icon",
+        "description": "Description",
+        "descriptionPlaceholder": "Optional description..."
+      },
+      "default": "Default",
+      "cannotDelete": "Cannot delete default activity types"
+    },
+    "layers": {
+      "title": "Wheel Layers",
+      "description": "Manage the layers (rings) displayed on the annual wheel. Each layer represents a category of activities. Drag to reorder, or use arrows to change the ring position (inner to outer).",
+      "form": {
+        "name": "Name",
+        "namePlaceholder": "e.g., Public Events",
+        "type": "Type",
+        "typeHint": "Type determines special behavior (e.g., holiday layers fetch public holidays from selected country).",
+        "country": "Country",
+        "countryHint": "Public holidays will be fetched from Nager.Date API for this country.",
+        "color": "Color",
+        "description": "Description",
+        "descriptionPlaceholder": "Optional description..."
+      }
+    },
+    "accessDenied": {
+      "title": "Access Denied",
+      "message": "You need the admin.write role to access this page.",
+      "help": "Contact your administrator to request access."
+    },
+    "saved": "Saved",
+    "updated": "Updated",
+    "deleted": "Deleted"
+  },
+  "share": {
+    "title": "Share",
+    "createLink": "Create share link",
+    "description": "Share the annual wheel with others",
+    "embedCode": "Embed code",
+    "copyLink": "Copy link",
+    "copied": "Copied!",
+    "permissions": "Permissions",
+    "publicAccess": "Public access",
+    "restrictedAccess": "Restricted access"
+  },
+  "filters": {
+    "title": "Filters",
+    "showAll": "Show all",
+    "hideAll": "Hide all",
+    "layers": "Layers",
+    "all": "All",
+    "none": "None"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "close": "Close",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Info",
+    "loading": "Loading...",
+    "required": "Required",
+    "optional": "Optional",
+    "retry": "Retry",
+    "documentation": "Documentation",
+    "licenseVersion": "License & Version"
+  },
+  "language": {
+    "title": "Language",
+    "select": "Select language",
+    "change": "Language"
+  }
+}
