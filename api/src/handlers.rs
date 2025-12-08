@@ -2,12 +2,12 @@
 //!
 //! Each handler corresponds to an HTTP-triggered Azure Function.
 
-use crate::auth::{TokenValidator, UserContext, extract_user_context, AuthError};
+use crate::auth::{TokenValidator, UserContext};
 use crate::crypto::{generate_share_key, generate_short_code, is_valid_share_key, is_valid_short_code, secure_compare};
 use crate::models::*;
 use crate::storage::{ShareStorage, ActivityStorage, LayerStorage, QueryOptions, StorageError};
 use chrono::{Duration, Utc};
-use serde::{Deserialize, Serialize};
+use serde::Serialize;
 use std::sync::Arc;
 
 /// Handler context with shared dependencies
@@ -67,6 +67,25 @@ pub async fn create_share(
     // Validate request
     if request.layer_config.layer_ids.is_empty() {
         return Err(HttpResponse::bad_request("At least one layer must be selected"));
+    }
+    
+    // Validate layer_ids count (prevent abuse)
+    if request.layer_config.layer_ids.len() > 100 {
+        return Err(HttpResponse::bad_request("Too many layers selected (max 100)"));
+    }
+    
+    // Validate name length if provided
+    if let Some(ref name) = request.name {
+        if name.len() > 200 {
+            return Err(HttpResponse::bad_request("Name too long (max 200 characters)"));
+        }
+    }
+    
+    // Validate description length if provided
+    if let Some(ref desc) = request.description {
+        if desc.len() > 2000 {
+            return Err(HttpResponse::bad_request("Description too long (max 2000 characters)"));
+        }
     }
     
     // Create share
@@ -160,7 +179,7 @@ pub async fn delete_share(
     share_id: &str,
 ) -> Result<HttpResponse<()>, HttpResponse<ApiError>> {
     // Get share first to verify ownership
-    let share = ctx.share_storage.get(&user.organization_id, share_id).await
+    let _share = ctx.share_storage.get(&user.organization_id, share_id).await
         .map_err(|e| match e {
             StorageError::NotFound(_) => HttpResponse::not_found("Share not found"),
             _ => HttpResponse::internal_error(&e.to_string()),

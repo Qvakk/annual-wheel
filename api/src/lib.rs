@@ -42,6 +42,8 @@ pub mod storage;
 pub mod handlers;
 pub mod auth;
 pub mod crypto;
+pub mod config;
 
 pub use models::*;
 pub use storage::*;
+pub use config::*;

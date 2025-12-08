@@ -135,15 +135,25 @@ pub struct TokenValidatorConfig {
     
     /// Admin role name
     pub admin_role: String,
+    
+    /// Skip signature validation (DEVELOPMENT ONLY - set to false in production!)
+    pub skip_signature_validation: bool,
 }
 
 impl Default for TokenValidatorConfig {
     fn default() -> Self {
+        // Check if we're in development mode
+        let is_dev = std::env::var("RUST_ENV")
+            .map(|v| v == "development")
+            .unwrap_or(false);
+        
         Self {
             // These should come from environment variables
             audience: std::env::var("AZURE_CLIENT_ID").unwrap_or_default(),
             issuer_pattern: "https://login.microsoftonline.com/".to_string(),
             admin_role: "admin.write".to_string(),
+            // Only skip signature validation in development mode
+            skip_signature_validation: is_dev,
         }
     }
 }
@@ -170,13 +180,13 @@ impl TokenValidator {
     
     /// Validate a JWT token
     pub async fn validate_token(&self, token: &str) -> Result<UserContext, AuthError> {
-        // Decode header to get key ID
-        let header = decode_header(token)
+        // Decode header to get key ID (unused for now, but kept for future JWKS implementation)
+        let _header = decode_header(token)
             .map_err(|e| AuthError::ValidationFailed(e.to_string()))?;
         
         // In production: Fetch Azure AD public keys from JWKS endpoint
-        // For now, we'll decode without signature verification for development
-        // TODO: Implement proper JWKS key fetching
+        // TODO: Implement proper JWKS key fetching from:
+        // https://login.microsoftonline.com/{tenant}/discovery/v2.0/keys
         
         let mut validation = Validation::new(Algorithm::RS256);
         validation.validate_exp = true;
@@ -187,9 +197,19 @@ impl TokenValidator {
         audiences.insert(self.config.audience.clone());
         validation.aud = Some(audiences);
         
-        // For development: Skip signature validation
-        // ⚠️ SECURITY: In production, always validate signature!
-        validation.insecure_disable_signature_validation();
+        // ⚠️ SECURITY WARNING: Signature validation should ALWAYS be enabled in production!
+        // Only skip in development mode when RUST_ENV=development
+        if self.config.skip_signature_validation {
+            tracing::warn!("⚠️  JWT signature validation is DISABLED - DEVELOPMENT MODE ONLY!");
+            validation.insecure_disable_signature_validation();
+        } else {
+            // TODO: In production, fetch JWKS keys and validate signature properly
+            // For now, we still disable but log a critical warning
+            tracing::error!("🚨 CRITICAL: JWT signature validation not implemented! Set RUST_ENV=development to acknowledge this risk.");
+            return Err(AuthError::ValidationFailed(
+                "Token signature validation not configured. Contact administrator.".to_string()
+            ));
+        }
         
         let token_data = decode::<TokenClaims>(
             token,
